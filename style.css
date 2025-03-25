@@ -40,6 +40,9 @@ body {
   border-radius: 3px;
   flex-grow: 2;
 }
+.sidebar-left nav ul li {
+  list-style: none;
+}
 
 .sidebar nav ul li {
   color: black;
@@ -50,18 +53,25 @@ body {
 }
 
 /* Contenido principal */
-main {
+.main {
   flex: 1;
   padding: 20px;
 }
-
+.profile-header {
+  display: flex;
+  gap: 20rem;
+}
 main.post-column {
   display: flex;
   width: 642px;
   height: 600px;
   text-align: center;
 }
-
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* Historias */
 .stories {
   display: flex;
@@ -113,6 +123,8 @@ main.post-column {
 
 /* ----- PERFIL ----- */
 .profile-container {
+  display: flex;
+  flex-direction: column;
   max-width: 900px;
   margin: 80px auto 20px;
   padding: 20px;

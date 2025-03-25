@@ -16,6 +16,7 @@ body {
 }
 
 /* Sidebar */
+
 .sidebar {
   display: flex;
   width: 244px;
@@ -57,10 +58,7 @@ body {
   flex: 1;
   padding: 20px;
 }
-.profile-header {
-  display: flex;
-  gap: 20rem;
-}
+
 main.post-column {
   display: flex;
   width: 642px;
@@ -98,6 +96,7 @@ main.post-column {
   display: flex;
   align-items: center;
   gap: 10px;
+  border: none;
 }
 
 .post-image {
@@ -109,6 +108,11 @@ main.post-column {
   margin-top: 10px;
 }
 
+.container-post {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
 /* Responsive */
 @media (max-width: 768px) {
   .post-container {
@@ -133,7 +137,7 @@ main.post-column {
 /* Sección de encabezado del perfil */
 .profile-header {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   gap: 20px;
   margin-bottom: 20px;
 }
@@ -157,17 +161,7 @@ main.post-column {
 .profile.container {
   display: flex;
 }
-
-.edit-profile-btn {
-  background-color: #0095f6;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.follow-btn {
+.main.post-column .follow-btn {
   background-color: #0073d6;
   color: white;
 }
@@ -222,12 +216,6 @@ main.post-column {
   justify-content: space-between;
   background-color: transparent;
   border: none;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  color: #c7c7c7;
 }
 
 .footer {

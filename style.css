@@ -18,8 +18,8 @@ body {
 /* Sidebar */
 
 .sidebar {
-  display: flex;
-  width: 244px;
+  gap: 20px;
+  width: 248px;
   height: 2481px;
   background: white;
   padding: 20px;
@@ -84,11 +84,18 @@ main.post-column {
 .posts-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
   float: center;
+  gap: 20px;
   width: 20%;
   padding: 10px;
   height: 300px;
+}
+
+.container-post {
+  border-top: 1px solid grey;
+  margin-top: 20px;
+  padding-top: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
 /* Post detalles */
@@ -105,7 +112,7 @@ main.post-column {
 }
 
 .post-footer {
-  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .container-post {
@@ -113,6 +120,7 @@ main.post-column {
   flex-direction: row;
   gap: 80px;
 }
+
 /* Responsive */
 @media (max-width: 768px) {
   .post-container {
@@ -132,6 +140,7 @@ main.post-column {
   max-width: 900px;
   margin: 80px auto 20px;
   padding: 20px;
+  align-self: flex-start;
 }
 
 /* Sección de encabezado del perfil */
@@ -149,7 +158,9 @@ main.post-column {
 }
 
 .profile-info {
-  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .profile-stats {
@@ -171,7 +182,7 @@ main.post-column {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  width: 963px;
+  width: 860px;
   height: 1898px;
 }
 
@@ -205,7 +216,6 @@ main.post-column {
   border: none;
   list-style: none;
 }
-
 .post {
   display: flex;
   justify-content: space-between;
@@ -213,7 +223,7 @@ main.post-column {
 
 .icon {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   background-color: transparent;
   border: none;
 }
